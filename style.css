@@ -11,6 +11,7 @@
     --very-light-pink: #9e9c9c;
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
+    --red:#ec5555;
 }
 html{
     font-size: 15px;
@@ -366,7 +367,7 @@ h1{
 }
 .navLeft_burguer ul li{
     list-style: none;
-    padding: 1.25em;
+    padding: 1em;
 }
 .navLeft_burguer a{
     text-decoration: none;
@@ -379,4 +380,90 @@ h1{
 .btn_login a{
     text-decoration: none;
     color: var(--hospital-green);
+}
+/* ------ Categories Login ----- */
+hr{
+    color:var(--very-light-pink);
+    opacity:0.1;
+}
+.cuenta_logueada p{
+    padding: 1.25em;
+}
+.cuenta_logueada a{
+    text-decoration: none;
+    color:var(--black);
+}
+.users_login{
+    color: var(--greyText);
+    padding: 10px 0;
+}
+/* ---- My orders ---- */
+.title_ShoppingCart_myorders{
+    justify-content: center;
+}
+.chevron{
+    background-color: transparent;
+    border: none;
+}
+.bx-chevron-right{
+    color: var(--very-light-pink);
+}
+.container_dates{
+    padding: 20px 0;
+}
+.product_item_date{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem;
+}
+.container_price{
+    display: flex;
+    align-items: center;
+}
+.container_price p{
+    padding-right: 1em;
+}
+.item_date{
+    font-weight: bold;
+}
+.item_number{
+    color: var(--greyText);
+}
+/* ----- Invalid User ------ */
+
+.invalid_user label{
+    color: var(--red);
+    font-weight: bold;
+}
+.invalid_user input{
+    background-color: rgb(241, 223, 223);
+    border: 1px solid var(--red);
+}
+.invalid_user .Login_invalid{
+    font-size: 1rem;
+    font-weight: 600;
+    height: 3.5em;
+    border-radius: 0.625em;
+    margin: 1.875em 0 1.875em 0;
+    color: var(--text-input-field);
+    border: none;
+    background-color: rgb(223, 223, 223);
+}
+.invalid_user .Signup{
+    background-color:var(--white);
+    border: 1px solid var(--hospital-green);
+    margin-top: 7em;
+}
+.text_error{
+    text-align: center;
+    padding: 1em;
+    color: var(--red);
+}
+/* ---- Invalid user 2 ---- */
+.invalid_user .normal_password{
+    color: var(--black);
+}
+.normal_password + input{
+    background-color: var(--text-input-field);
+    border: none;
 }
