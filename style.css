@@ -1,0 +1,382 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --greyText: #636161;
+    --very-light-pink: #9e9c9c;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+}
+html{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    height: 50.75em;
+    width: 23.437em;
+}
+
+figure{
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    margin: 3em 0 2em 0;
+}
+
+figure img{
+    padding: 1em 0 1em 0 ;
+}
+form{
+ padding: 6.75em 0 0 0;   
+}
+
+form label,
+form input{
+    display: block;
+    width: 100%;
+}
+label{
+    font-size: 0.875rem;
+    padding: 0.625em 0 0.625em 0;
+}
+input{
+    padding: 0.3125em 0 0.3125em 0.625em;
+    border: none;
+    background-color: var(--text-input-field);
+    height: 2.5em;
+    border-radius: 0.625em;
+}
+.Login,
+.Confirm{
+    font-size: 1rem;
+    font-weight: 600;
+    height: 3.5em;
+    border-radius: 0.625em;
+    margin: 1.875em 0 1.875em 0;
+    color: var(--text-input-field);
+    background-color: var(--hospital-green);
+}
+.Forgot,
+.Back_ToLogin{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--hospital-green);
+}
+.Signup{
+    font-size: 1rem;
+    font-weight: 600;
+    height: 3.5em;
+    border-radius: 0.625em;
+    margin: 5.625em 0 1.875em 0;
+    color: var(--hospital-green);
+    background-color: var(--white);
+    border-color:var(--hospital-green);
+
+}
+
+/* Password recovery */
+.messageRecovery{
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    padding:3em 0.9375em 0 0.9375em;
+}
+
+.messageRecovery__Password{
+    font-weight: bold;
+    padding: 0.625em 0 0.625em 0;
+}
+
+.messageRecovery__Inform{
+    color:var(--very-light-pink);
+    padding: 0.625em 0 0.625em 0;
+    line-height: 1.5625em;
+}
+
+/* Email has been sent! */
+.bx-mail{
+    display: flex;
+    justify-content: center;
+    padding: 4.5em 0 4.5em 0;
+}
+.bx-mail-send{
+    color: var(--hospital-green);
+}
+.Resend{
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0 0 0;
+    color:var(--very-light-pink);
+}
+.Resend a{
+    text-decoration: none;
+    color: var(--hospital-green);
+    padding-left: 0.3125em;
+}
+/* pagina principal */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625em  0.625em ;
+    border-bottom: 0.0625em solid var(--very-light-pink);
+}
+
+.mainBurger,
+.carritoCompras{
+    display: flex;
+    align-items: center;
+}
+.bx{
+    color: var(--black);
+}
+.container_Search{
+    padding: 0.625em;
+}
+.search{
+    width: 100%;
+    margin: 0.625em 0;
+    
+}
+
+.search::placeholder{
+    color: #C7C7C7;
+}
+nav{
+    display: block;
+    width: 100%;
+
+}
+nav div{
+    display: flex;
+    height: 2.8125em;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    font-size: 0.875rem;
+    color: var(--very-light-pink);
+    text-decoration: none;
+    margin: 0.3125em;
+    display: flex;
+}
+nav a:hover{
+    color: var(--hospital-green);
+}
+.orderOptions{
+    font-size: 0.8125em;
+    display: flex;
+    justify-content: center;
+}
+.filtro{
+    margin-left: 0.3125em;
+    background-color: var(--white);
+    border: none;
+    color: var(--very-light-pink)
+}
+
+/*--------- main ----------*/
+.container_main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 0.625em;
+    padding: 0 0.625em;
+}
+.item_product{
+    display: grid;
+    font-size: 0.8125rem;
+}
+div figure{
+    height: 12.5em;
+    margin: 0;
+}
+figure img{
+    height: 12.5em;
+    width: 100%;
+    border-radius: 2.5em;
+
+}
+.Details_product{
+    display: flex;
+    justify-content: space-between;
+    height: 3.125em;
+}
+.details_carrito{
+    display: flex;
+    align-items: center;
+}
+.detail_price{
+    padding: 0.3125em;
+}
+div strong{
+    letter-spacing: 0.1875em;
+    
+}
+.detail_name{
+    letter-spacing: 0.0625em;
+}
+
+/* ----- Product ----- */
+
+.container_main_product img{
+    width: 100%;
+    padding: 0.625em;
+}
+.docs{
+    display: flex;
+    justify-content: center;
+}
+.docs i {
+    color: #C7C7C7;
+}
+
+.description_product{
+    display: block;
+    padding: 10px 0 ;
+
+}
+.description_product p{
+    padding: 0.625em 0;
+}
+.description_product h4{
+    padding: 0.3125em 0;
+    letter-spacing: 0.125em;
+    color: var(--greyText) ;
+}
+.description_text{
+    padding: 10px 0;
+    line-height: 1.3em;
+    text-align: justify;
+    color: var(--greyText);
+}
+.AddtoCart{
+    width: 100%;
+    height: 4em;
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 0.625em;
+    margin-top: 4em;
+}
+.AddtoCart i{
+    color: var(--text-input-field);
+    font-size: 1.1875rem;
+}
+/* my account edit */
+h1{
+    margin-top: 1.5em;
+}
+.myaccountEdit input{
+    background-color: var(--white);
+}
+.myaccountEdit .Edit{
+    height: 4em;
+    text-transform: uppercase;
+    margin-top: 17em;
+    font-weight: bold;
+    background-color: var(--white);
+    color: var(--hospital-green);
+    border:1px solid var(--hospital-green);
+}
+/* My Account Save  and Create*/
+.myaccountSave .Save,
+.myaccountCreate .Create{
+    height: 4em;
+    text-transform: uppercase;
+    margin-top: 17em;
+    font-weight: bold;
+    background-color: var(--hospital-green);
+    color:var(--text-input-field);
+    border:1px solid var(--hospital-green);
+}
+/* ---- Shopping cart---- */
+.title_ShoppingCart{
+    display: flex;
+    width: 12.5em;
+    margin-right: 2.5em;
+}
+.container_shop_items{
+    display: block;
+}
+.product_item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5em;
+    margin: 1.25rem 0 ;
+    
+}
+.product_item h4{
+    text-align: center;
+    color: var(--greyText);
+    font-weight: 100;
+}
+.product_item img{
+    height: 5em;
+    width: 5em;
+    border-radius: 1.25em;
+}
+.product_item button{
+    background-color: transparent;
+    border: none;
+}
+.product_item i{
+    color: var(--very-light-pink);
+}
+.product_total{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.875em;
+    margin-top: 4em;
+    background-color: #e9e8e8;
+    border-radius: 0.9375em;
+}
+/* ---- Product removed ---- */
+
+#product_remove{
+  opacity: .3;
+}
+#product_remove p{
+    text-transform: uppercase;
+}
+
+/*---- Categories ----*/
+.button_burguer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+.navLeft_burguer{
+    display: block;
+    
+}
+.navLeft_burguer h2{
+    margin: 1em;
+}
+.navLeft_burguer ul li{
+    list-style: none;
+    padding: 1.25em;
+}
+.navLeft_burguer a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1em;
+}
+.btn_login{
+    padding: 8em 0 0 1em;
+}
+.btn_login a{
+    text-decoration: none;
+    color: var(--hospital-green);
+}
